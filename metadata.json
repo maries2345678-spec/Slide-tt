@@ -1,0 +1,6 @@
+{
+  "name": "HCMC CultureHub - Báo Cáo Nghiên Cứu KHKT",
+  "description": "Báo cáo nghiên cứu khoa học chuyên nghiệp: Hệ thống học liệu số thông minh tích hợp trí tuệ nhân tạo (AI) hỗ trợ học sinh THPT khám phá văn hóa TP.HCM mới.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

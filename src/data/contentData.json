@@ -1,0 +1,452 @@
+{
+  "projectInfo": {
+    "title": "NGHIÊN CỨU XÂY DỰNG HCMC CULTUREHUB",
+    "subtitle": "Hệ thống học liệu số thông minh tích hợp trí tuệ nhân tạo (AI) hỗ trợ học sinh THPT khám phá văn hóa TP.HCM",
+    "contest": "Cuộc thi Khoa học Kĩ thuật Cấp Thành phố dành cho học sinh Trung học",
+    "academicYear": "Năm học 2026 - 2027",
+    "field": "Khoa học xã hội và hành vi",
+    "authors": [
+      { "name": "Hồ Ngọc Thư", "role": "Học sinh lớp 12A5", "school": "THPT Bình Phú, Bình Dương" },
+      { "name": "Nguyễn Thanh Trúc", "role": "Học sinh lớp 12A1", "school": "THPT Bình Phú, Bình Dương" }
+    ],
+    "advisor": "Th.s Hoàng Thị Tú Anh",
+    "date": "Tháng 09 / 2026",
+    "demoUrl": "https://hcmc-pg.github.io/HCMC-web/",
+    "sampleSize": 100,
+    "totalTopics": 21,
+    "themeCount": 5
+  },
+  "styleGuide": {
+    "colors": {
+      "paper": "#FBF9F5",
+      "paperDark": "#151412",
+      "card": "#FFFFFF",
+      "cardDark": "#1C1A17",
+      "border": "#E7E2D8",
+      "borderDark": "#2E2A24",
+      "textMain": "#1C1917",
+      "textMuted": "#78716C",
+      "terracotta": "#9A3412",
+      "amber": "#B45309",
+      "lapis": "#1E3A8A",
+      "forest": "#14532D",
+      "accent": "#C2410C"
+    },
+    "fonts": {
+      "display": "Playfair Display, Georgia, serif",
+      "body": "Plus Jakarta Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    }
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "slideNumber": 1,
+      "category": "BÁO CÁO KHOA HỌC KĨ THUẬT 2026 - 2027",
+      "title": "HCMC CULTUREHUB",
+      "headline": "Hệ thống học liệu số thông minh tích hợp trí tuệ nhân tạo (AI) hỗ trợ học sinh THPT khám phá văn hóa TP.HCM",
+      "lead": "Nghiên cứu đột phá ứng dụng AI định hướng Socratic và cấu trúc học liệu số mở rộng (TP.HCM – Bình Dương – Bà Rịa Vũng Tàu) nâng cao hiệu quả giáo dục di sản địa phương.",
+      "image": "./assets/hero_culturehub_showcase.jpg",
+      "imageCaption": "Không gian văn hóa đô thị TP.HCM mới & giao diện học liệu số thế hệ mới",
+      "metadata": {
+        "field": "Khoa học xã hội và hành vi",
+        "sample": "100 học sinh THPT",
+        "scope": "TP.HCM · Bình Dương · BR-VT",
+        "platform": "GitHub Web Platform & AI Engine"
+      },
+      "speakerNotes": "Kính chào Ban Giám khảo và quý Thầy Cô! Em xin đại diện nhóm nghiên cứu từ Trường THPT Bình Phú trình bày đề tài 'Nghiên cứu xây dựng HCMC CultureHub - Hệ thống học liệu số thông minh tích hợp AI hỗ trợ học sinh THPT khám phá văn hóa TP.HCM'. Trong 10 phút tới, nhóm sẽ trình bày bối cảnh nghiên cứu, giải pháp kỹ thuật, phương pháp thực nghiệm N=100 học sinh và các chỉ số cải thiện kết quả học tập mang tính định lượng rõ rệt."
+    },
+    {
+      "id": "context-problem",
+      "slideNumber": 2,
+      "category": "01 / ĐẶT VẤN ĐỀ & BỐI CẢNH",
+      "title": "Bối Cảnh & Thực Trạng Tiếp Cận Văn Hóa Địa Phương",
+      "headline": "Sự lệch pha giữa nhu cầu số hóa của học sinh và hiện trạng tài liệu phân tán",
+      "lead": "Nghị quyết 29-NQ/TW và Chương trình GDPT 2018 đặt trọng tâm vào việc đổi mới phương pháp dạy học qua công nghệ số, song nguồn tư liệu văn hóa địa phương đang đối mặt với nhiều rào cản lớn.",
+      "stats": [
+        { "value": "78.7%", "label": "Tìm kiếm qua MXH", "subtext": "Nguồn thông tin thiếu thẩm định, tin tức phân mảnh" },
+        { "value": "55.5%", "label": "Gặp rào cản tổng hợp", "subtext": "Tài liệu tản mát nhiều website, không có hệ thống chuẩn" },
+        { "value": "83.2%", "label": "Nhu cầu đa phương tiện", "subtext": "Mong muốn trải nghiệm bản đồ số, infographic & video" },
+        { "value": "82.0%", "label": "Đánh giá cấp thiết", "subtext": "Khẳng định việc học văn hóa địa phương là rất quan trọng" }
+      ],
+      "keyIssues": [
+        {
+          "title": "Phân mảnh tài nguyên",
+          "description": "Nội dung nằm rải rác trên nhiều trang tin du lịch hoặc bài viết học thuật đơn lẻ, thiếu định hướng giáo dục phổ thông."
+        },
+        {
+          "title": "Hình thức truyền thống khô khan",
+          "description": "Nặng về văn bản thụ động, thiếu tương tác hai chiều, chưa tận dụng được công cụ AI để học sinh tự vấn và khám phá."
+        },
+        {
+          "title": "Khái niệm không gian văn hóa mới",
+          "description": "Chưa có nền tảng nào kết nối văn hóa TP.HCM mở rộng gắn liền với Bình Dương và Bà Rịa - Vũng Tàu theo tinh thần UNESCO HUL."
+        }
+      ],
+      "speakerNotes": "Tại sao đề tài này ra đời? Khảo sát tiền trạm 100 học sinh cho thấy 82% nhận thức rõ tầm quan trọng của văn hóa địa phương, nhưng hơn 55% gặp khó khăn do nguồn dữ liệu phân tán. 78.7% học sinh tìm qua mạng xã hội với nguy cơ thông tin sai lệch. Đây chính là động lực để chúng em xây dựng HCMC CultureHub."
+    },
+    {
+      "id": "objectives-hypothesis",
+      "slideNumber": 3,
+      "category": "02 / MỤC TIÊU & CÂU HỎI NGHIÊN CỨU",
+      "title": "Mục Tiêu Khoa Học & Giả Thuyết Nghiên Cứu",
+      "headline": "Kiểm chứng năng lực của hệ thống học liệu số tích hợp AI trong việc gia tăng tri thức và cảm hứng di sản",
+      "lead": "Xác định rõ ràng mục tiêu tổng quát, giải quyết 3 câu hỏi nghiên cứu cốt lõi và kiểm định giả thuyết khoa học bằng số liệu định lượng.",
+      "researchQuestions": [
+        {
+          "number": "Q1",
+          "question": "Cấu trúc & nội dung kho học liệu số cần thiết kế như thế nào để vừa khoa học, trực quan, vừa phù hợp lứa tuổi THPT?",
+          "answer": "Thiết kế chuẩn Modular 5 không gian văn hóa, kết hợp đa phương tiện và thông tin được thẩm định kỹ lưỡng."
+        },
+        {
+          "number": "Q2",
+          "question": "Trí tuệ nhân tạo (AI) được tích hợp dưới hình thức nào để đóng vai trò trợ lý học tập thay vì giải hộ?",
+          "answer": "Hệ thống Prompt AI 5 cấp độ cùng trợ lý Ba Son AI dẫn dắt tư duy Socratic, tuyệt đối tuân thủ đạo đức AI học đường."
+        },
+        {
+          "number": "Q3",
+          "question": "Hệ thống có thật sự cải thiện kết quả kiểm tra kiến thức và mức độ hứng thú học tập của học sinh hay không?",
+          "answer": "Thực nghiệm đối chiếu Pre-test và Post-test đo lường độ tăng trưởng kiến thức và chỉ số trải nghiệm Likert 5 mức."
+        }
+      ],
+      "hypothesis": {
+        "core": "Nếu học sinh THPT được tiếp cận kho học liệu số có cấu trúc mở, trực quan hóa đa phương tiện và có sự đồng hành của trợ lý AI định hướng thì mức độ tiếp thu kiến thức văn hóa địa phương và sự hứng thú học tập sẽ tăng trưởng có ý nghĩa thống kê.",
+        "validationMetric": "Đo lường qua N=100 mẫu đối sánh Pre-Post và khảo sát độ hữu dụng chuẩn hóa."
+      },
+      "speakerNotes": "Nhóm đặt ra 3 câu hỏi nghiên cứu tường minh: Về cấu trúc học liệu, về mô thức tích hợp AI, và về hiệu quả kiểm chứng thực nghiệm. Giả thuyết nghiên cứu khẳng định sự kết hợp giữa mô hình học liệu trực quan và trợ lý AI định hướng sẽ tạo bước nhảy vọt trong năng lực tự học của học sinh."
+    },
+    {
+      "id": "cultural-spaces",
+      "slideNumber": 4,
+      "category": "03 / CƠ SỞ KHOA HỌC & DỮ LIỆU",
+      "title": "Khung UNESCO HUL & Hệ Thống 21 Học Liệu Tiêu Biểu",
+      "headline": "Tiếp cận Cảnh quan Đô thị Lịch sử kết nối không gian TP.HCM – Bình Dương – Bà Rịa Vũng Tàu",
+      "lead": "Toàn bộ 21 học liệu được tuyển chọn nghiêm ngặt theo 4 nguyên tắc: Tính tiêu biểu, Tính đa dạng vùng miền, Tính chính xác lịch sử và Tính tương thích với CT GDPT 2018.",
+      "image": "./assets/heritage_historic_sites.jpg",
+      "imageCaption": "Bến Nhà Rồng - Di tích lịch sử tiêu biểu trong nhóm Không gian Lịch sử & Ký ức",
+      "spaces": [
+        {
+          "index": "01",
+          "name": "Không gian Lịch sử & Ký ức đô thị",
+          "items": ["Bến Nhà Rồng", "Dinh Độc Lập", "Địa đạo Củ Chi", "Nhà tù Côn Đảo"],
+          "focus": "Truyền thống yêu nước, di tích kháng chiến & đấu tranh giải phóng dân tộc."
+        },
+        {
+          "index": "02",
+          "name": "Không gian Kiến trúc & Tín ngưỡng",
+          "items": ["Bưu điện TT Sài Gòn", "Nhà thờ Đức Bà", "Chùa Hội Khánh", "Thích Ca Phật Đài"],
+          "focus": "Giao thoa văn hóa Đông - Tây, di sản tôn giáo, kiến trúc thời kỳ đầu thế kỷ 20."
+        },
+        {
+          "index": "03",
+          "name": "Không gian Thương mại & Đời sống",
+          "items": ["Chợ Bến Thành", "Chợ Thủ Dầu Một", "Chợ Xóm Lưới", "Đường sách Nguyễn Văn Bình"],
+          "focus": "Kinh tế chợ dân sinh truyền thống, đời sống thị dân và văn hóa đọc hiện đại."
+        },
+        {
+          "index": "04",
+          "name": "Không gian Sáng tạo & Làng nghề",
+          "items": ["Sơn mài Tương Bình Hiệp", "Đờn ca tài tử Nam Bộ", "Nghệ thuật Cải lương", "Lễ hội Nghinh Ông"],
+          "focus": "Di sản văn hóa phi vật thể UNESCO, nghề thủ công truyền thống và nghệ thuật diễn xướng."
+        },
+        {
+          "index": "05",
+          "name": "Không gian Biển, Sông nước & Đô thị hiện đại",
+          "items": ["TP Mới Bình Dương", "Hồ Dầu Tiếng", "Bãi Sau Vũng Tàu", "Làng chài Phước Hải", "Phố đi bộ Nguyễn Huệ"],
+          "focus": "Hệ sinh thái biển - sông ngòi, công nghiệp hóa đô thị và không gian công cộng tương lai."
+        }
+      ],
+      "speakerNotes": "Cơ sở lý luận đề tài dựa trên khuyến nghị của UNESCO về Cảnh quan đô thị lịch sử (HUL). Nhóm không chỉ bó hẹp trong địa giới TP.HCM cũ mà mở rộng sang Bình Dương và Bà Rịa - Vũng Tàu với 21 học liệu được cấu trúc hóa theo 5 trụ cột không gian, đảm bảo tính cân đối lịch sử - kiến trúc - văn hóa và đời sống."
+    },
+    {
+      "id": "system-architecture-ai",
+      "slideNumber": 5,
+      "category": "04 / GIẢI PHÁP KỸ THUẬT & TRÍ TUỆ NHÂN TẠO",
+      "title": "Kiến Trúc Hệ Thống & Đột Phá Trợ Lý Ba Son AI",
+      "headline": "Giao diện Modular, Trò chơi hóa Gamification và Trợ lý AI định hướng Socratic",
+      "lead": "Website triển khai trên nền tảng GitHub tương thích mọi thiết bị, tích hợp hệ thống Prompt AI chuyên biệt giúp người học không bị lệ thuộc mà phát triển tư duy phản biện.",
+      "image": "./assets/smart_learning_interface.jpg",
+      "imageCaption": "Không gian số HCMC CultureHub với trợ lý Ba Son AI và bản đồ tương tác",
+      "pillars": [
+        {
+          "title": "Bố cục Modular (Module-based)",
+          "desc": "Tách bạch rõ ràng: Khái quát · Phân bố địa lý · Giá trị văn hóa · Đa phương tiện · Nhiệm vụ trải nghiệm. Tránh quá tải thông tin thị giác."
+        },
+        {
+          "title": "Trợ lý ảo Ba Son AI",
+          "desc": "Đóng vai trò cố vấn thông minh. Khi học sinh gặp câu hỏi khó, AI gợi mở bằng câu hỏi phụ và dữ kiện dẫn xuất thay vì cho sẵn đáp án."
+        },
+        {
+          "title": "Hệ thống Prompt AI 5 Cấp độ",
+          "desc": "Cung cấp prompt sẵn có: Phân tích nguồn gốc · So sánh văn hóa vùng miền · Đóng vai nhân chứng lịch sử · Khám phá đa chiều · Tự kiểm tra."
+        },
+        {
+          "title": "Gamification & Thử Thách",
+          "desc": "Thu thập huy hiệu di sản theo các chặng hành trình, mini-quiz tương tác thời gian thực củng cố kiến thức trước và sau mỗi bài học."
+        }
+      ],
+      "aiEthicsPrinciples": [
+        "Trung thực học thuật: Không thay thế tư duy và năng lực diễn đạt của học sinh",
+        "Thẩm định chéo: Mọi thông tin AI đưa ra đều yêu cầu học sinh đối chiếu tài liệu nguồn",
+        "Bảo mật dữ liệu: Không thu thập dữ liệu định danh cá nhân của học sinh"
+      ],
+      "speakerNotes": "Điểm độc đáo nhất về công nghệ chính là Trợ lý 'Ba Son AI'. Chúng em không dùng AI như máy làm bài hộ, mà huấn luyện hệ thống Prompt theo phương pháp vấn đáp Socratic: đưa ra gợi ý, đặt câu hỏi ngược để học sinh tự tư duy. Đồng thời giao diện chuẩn Modular giúp việc học trực quan trên cả điện thoại và máy tính."
+    },
+    {
+      "id": "methodology-procedure",
+      "slideNumber": 6,
+      "category": "05 / PHƯƠNG PHÁP & QUY TRÌNH THỰC NGHIỆM",
+      "title": "Thiết Kế Thực Nghiệm & Quy Trình Thu Thập Dữ Liệu",
+      "headline": "Thực nghiệm chuẩn mực trên 100 học sinh THPT Bình Phú (Khối 10, 11 và 12)",
+      "lead": "Triển khai phương pháp thực nghiệm bán thực nghiệm (Quasi-experiment) với quy trình 7 giai đoạn khép kín từ tháng 7 đến tháng 9 năm 2026.",
+      "timelineSteps": [
+        { "phase": "Giai đoạn 1 (22/7 - 30/7)", "title": "Xác định đề tài & mục tiêu", "detail": "Nghiên cứu tài liệu lý luận, khung UNESCO HUL và chương trình GDPT 2018." },
+        { "phase": "Giai đoạn 2 (31/7 - 6/8)", "title": "Xây dựng cơ sở & khung nội dung", "detail": "Xác lập mô hình 5 không gian văn hóa và tiêu chí tuyển chọn 21 học liệu." },
+        { "phase": "Giai đoạn 3 (7/8 - 20/8)", "title": "Thiết kế Web & biên soạn nội dung", "detail": "Thiết kế giao diện Modular, infographic, tích hợp bản đồ và hệ thống câu hỏi." },
+        { "phase": "Giai đoạn 4 (21/8 - 1/9)", "title": "Tích hợp AI & thử nghiệm alpha", "detail": "Xây dựng prompt Ba Son AI, tinh chỉnh giao diện cùng giáo viên hướng dẫn." },
+        { "phase": "Giai đoạn 5 (2/9 - 12/9)", "title": "Thiết kế bộ công cụ khảo sát", "detail": "Chuẩn hóa bộ đề Pre-test và Post-test, thang đo Likert 5 mức độ tin cậy." },
+        { "phase": "Giai đoạn 6 (13/9 - 17/9)", "title": "Triển khai thực nghiệm N=100", "detail": "100 học sinh THPT Bình Phú tham gia làm Pre-test -> Học trên Web -> Post-test." },
+        { "phase": "Giai đoạn 7 (18/9 - 22/9)", "title": "Xử lý số liệu & hoàn tất báo cáo", "detail": "Làm sạch dữ liệu, kiểm định thống kê so sánh, biểu đồ hóa trực quan." }
+      ],
+      "demographics": {
+        "sample": 100,
+        "school": "THPT Bình Phú, Bình Dương",
+        "grades": "Khối 10, Khối 11, Khối 12",
+        "tool": "Google Forms trực tuyến & Hệ thống bài thi đánh giá chuẩn hóa"
+      },
+      "speakerNotes": "Quy trình thực nghiệm được tiến hành chặt chẽ qua 7 giai đoạn từ 22/7 đến 22/9/2026. Mẫu khảo sát N=100 học sinh phân bổ đủ cả 3 khối lớp 10, 11, 12 Trường THPT Bình Phú. Học sinh làm bài kiểm tra trước (Pre-test), trải nghiệm tự học cùng Ba Son AI, sau đó làm Post-test độc lập."
+    },
+    {
+      "id": "pretest-baseline",
+      "slideNumber": 7,
+      "category": "06 / KẾT QUẢ KHẢO SÁT BAN ĐẦU",
+      "title": "Kết Quả Khảo Sát Trước Trải Nghiệm (Pre-test: N=100)",
+      "headline": "Số liệu chuẩn xác từ khảo sát 100 học sinh THPT Bình Phú về thói quen, mức độ tiếp cận AI và kiến thức ban đầu",
+      "lead": "Khảo sát tiền trạm theo đúng Mục 3.1 của báo cáo nghiên cứu: Bảng 3.1, thực trạng tiếp cận AI và tỉ lệ trả lời đúng ban đầu của 3 nhóm kiến thức.",
+      "table31": [
+        { "criteria": "Nguồn tìm kiếm thông tin phổ biến nhất", "content": "Mạng xã hội", "rate": 78.7 },
+        { "criteria": "Khó khăn phổ biến nhất khi tìm hiểu", "content": "Nội dung nhiều nơi, khó tổng hợp", "rate": 55.5 },
+        { "criteria": "Nội dung học sinh mong muốn trên website", "content": "Hình ảnh, video trực quan", "rate": 83.2 },
+        { "criteria": "Mức độ cần thiết của việc tìm hiểu", "content": "Rất cần thiết và cần thiết", "rate": 82.0 }
+      ],
+      "aiAccess": {
+        "often": 36.0,
+        "sometimes": 46.0,
+        "rarelyOrNever": 18.0,
+        "score": 3.7,
+        "scoreMax": 5.0
+      },
+      "preTestScores": [
+        { "domain": "Nhóm Lịch sử", "rate": 96.4, "desc": "Kiến thức truyền thống vững chắc" },
+        { "domain": "Nhóm Văn hóa - Nghệ thuật", "rate": 94.5, "desc": "Di sản phi vật thể và làng nghề" },
+        { "domain": "Nhóm Không gian Đô thị", "rate": 88.65, "desc": "Khoảng trống kiến thức cảnh quan liên vùng" }
+      ],
+      "preTestAverage": 93.18,
+      "speakerNotes": "Theo đúng báo cáo khảo sát thực nghiệm Mục 3.1 với 100 học sinh THPT Bình Phú: Mạng xã hội là nguồn tra cứu phổ biến nhất (78.7%), khó khăn lớn nhất là nội dung nhiều nơi khó tổng hợp (55.5%), và 83.2% mong muốn hình ảnh video. Về AI, 36% dùng thường xuyên và 46% thỉnh thoảng (tổng 82%), điểm kỳ vọng AI đạt 3.7/5. Về kiến thức đầu vào, điểm Không gian đô thị thấp nhất (88.65%), trong khi Lịch sử đạt 96.4% và Văn hóa nghệ thuật đạt 94.5%."
+    },
+    {
+      "id": "learning-impact-results",
+      "slideNumber": 8,
+      "category": "07 / KẾT QUẢ THỰC NGHIỆM CHÍNH",
+      "title": "Hiệu Quả Học Tập: So Sánh Pre-Test vs Post-Test",
+      "headline": "Tỉ lệ đúng bình quân tăng từ 93.18% lên 94.77% (+1.59%), bứt phá mạnh nhất ở Văn hóa - Nghệ thuật (+3.3%)",
+      "lead": "Minh chứng khách quan về sự cải thiện chất lượng tiếp thu kiến thức của học sinh sau khi trải nghiệm HCMC CultureHub và trợ lý Ba Son AI.",
+      "comparisonTable": [
+        {
+          "domain": "Lịch sử và Ký ức đô thị",
+          "preTest": 96.40,
+          "postTest": 96.50,
+          "delta": "+0.10%",
+          "significance": "Duy trì ở mức rất cao do học sinh đã có nền tảng vững chắc",
+          "deltaValue": 0.10
+        },
+        {
+          "domain": "Văn hóa – Nghệ thuật & Làng nghề",
+          "preTest": 94.50,
+          "postTest": 97.80,
+          "delta": "+3.30%",
+          "significance": "Bứt phá vượt bậc nhờ học liệu trực quan âm thanh & tranh ảnh sống động",
+          "deltaValue": 3.30
+        },
+        {
+          "domain": "Không gian Đô thị & Cảnh quan",
+          "preTest": 88.65,
+          "postTest": 90.00,
+          "delta": "+1.35%",
+          "significance": "Cải thiện rõ nét kiến thức liên vùng (Bình Dương, Bà Rịa - Vũng Tàu)",
+          "deltaValue": 1.35
+        },
+        {
+          "domain": "Toàn bộ hệ thống (Bình quân)",
+          "preTest": 93.18,
+          "postTest": 94.77,
+          "delta": "+1.59%",
+          "significance": "Khẳng định hiệu quả thực chứng của hệ sinh thái học liệu số",
+          "deltaValue": 1.59
+        }
+      ],
+      "image": "./assets/cultural_arts_craft.jpg",
+      "imageCaption": "Học liệu về Làng sơn mài Tương Bình Hiệp và Đờn ca tài tử giúp nâng cao 3.3% điểm nhận thức",
+      "keyFindings": [
+        "Nhóm Văn hóa - Nghệ thuật có mức tăng trưởng ngoạn mục nhất (+3.3%), chứng minh việc cung cấp hình ảnh chi tiết và âm thanh Đờn ca tài tử giúp học sinh khắc sâu di sản phi vật thể.",
+        "Nhóm Không gian Đô thị tăng +1.35% (vượt mốc 90%), xóa bỏ định kiến học sinh chỉ biết di tích TP.HCM mà quên lãng Bình Dương và Vũng Tàu.",
+        "Mức tăng trưởng trung bình +1.59% trên nền tảng điểm chuẩn đã ở mức rất cao (>93%) thể hiện tính ổn định và tính hoàn thiện của học liệu số."
+      ],
+      "speakerNotes": "Đây là kết quả quan trọng nhất của công trình nghiên cứu: Tỉ lệ trả lời đúng toàn hệ thống tăng từ 93.18% lên 94.77%. Đặc biệt, nhóm kiến thức Văn hóa - Nghệ thuật có bước nhảy vọt ấn tượng nhất: tăng 3.3% (từ 94.5% lên 97.8%). Điều này chứng minh hiệu quả vượt trội của đa phương tiện kết hợp AI trong việc giảng dạy các di sản văn hóa phi vật thể."
+    },
+    {
+      "id": "ux-ai-evaluation",
+      "slideNumber": 9,
+      "category": "08 / ĐÁNH GIÁ TRẢI NGHIỆM & ĐỘ HỮU ÍCH",
+      "title": "Chỉ Số Đánh Giá Trải Nghiệm & Tương Tác AI (Likert 5 Mức)",
+      "headline": "Điểm hài lòng chung đạt 3.97/5.00, trong đó Giao diện đạt đỉnh 4.04/5.00",
+      "lead": "Khảo sát định lượng sau thực nghiệm (Post-test) phản ánh sự đón nhận tích cực của học sinh đối với mô hình học liệu số thông minh.",
+      "likertScores": [
+        {
+          "cluster": "Giao diện và tính trực quan học liệu",
+          "score": 4.04,
+          "max": 5.0,
+          "benchmark": "Rất tích cực (>= 4.0)",
+          "subMetrics": [
+            { "label": "Giao diện website dễ sử dụng & thân thiện", "val": 4.08 },
+            { "label": "Chủ đề phân chia khoa học, dễ định vị", "val": 4.05 },
+            { "label": "Bài viết rõ ràng, súc tích, dễ hiểu", "val": 4.02 },
+            { "label": "Hình ảnh, infographic & video trực quan", "val": 4.10 }
+          ]
+        },
+        {
+          "cluster": "Hứng thú học tập & hỗ trợ khám phá",
+          "score": 4.00,
+          "max": 5.0,
+          "benchmark": "Rất tích cực (>= 4.0)",
+          "subMetrics": [
+            { "label": "Hiểu rõ hơn về không gian văn hóa TP.HCM mới", "val": 4.02 },
+            { "label": "Gia tăng hứng thú tìm hiểu văn hóa địa phương", "val": 4.05 },
+            { "label": "Mong muốn tiếp tục sử dụng cho chủ đề khác", "val": 3.93 }
+          ]
+        },
+        {
+          "cluster": "Hoạt động học tập cùng AI",
+          "score": 3.87,
+          "max": 5.0,
+          "benchmark": "Tích cực & Tiềm năng",
+          "subMetrics": [
+            { "label": "Prompt AI hỗ trợ khai thác thông tin hiệu quả", "val": 3.86 },
+            { "label": "Prompt AI dễ thao tác và gần gũi", "val": 3.88 }
+          ]
+        }
+      ],
+      "studentVoice": [
+        { "quote": "Giao diện rất trực quan, đọc không bị mỏi mắt như tài liệu chữ. Phần hỏi đáp AI gợi ý câu hỏi rất thông minh chứ không lộ đáp án.", "author": "Học sinh Khối 12" },
+        { "quote": "Em rất thích phần làng sơn mài Tương Bình Hiệp và các chợ truyền thống ở Bình Dương, cảm thấy văn hóa quê mình được trân trọng.", "author": "Học sinh Khối 11" }
+      ],
+      "speakerNotes": "Về mặt định lượng cảm nhận người học: Điểm đánh giá chung đạt 3.97/5. Nhóm Giao diện và Học liệu đứng đầu với 4.04/5, khẳng định tính đúng đắn của thiết kế Modular. Mức độ tạo cảm hứng đạt tròn 4.0/5. Hoạt động với AI đạt 3.87/5, cho thấy học sinh rất hào hứng nhưng vẫn mong muốn AI được tích hợp liền mạch hơn nữa."
+    },
+    {
+      "id": "scientific-novelty-contributions",
+      "slideNumber": 10,
+      "category": "09 / GIÁ TRỊ & TÍNH MỚI CỦA ĐỀ TÀI",
+      "title": "Bốn Đóng Góp Nổi Bật Của Nghiên Cứu",
+      "headline": "Hài hòa giữa chiều sâu khoa học, tính ứng dụng thực tiễn và giá trị bảo tồn cộng đồng",
+      "lead": "Đề tài đáp ứng đầy đủ 4 tiêu chí cốt lõi trong nghiên cứu KHKT dành cho học sinh trung học theo chuẩn của Bộ GD&ĐT.",
+      "contributions": [
+        {
+          "title": "Tính Mới (Novelty)",
+          "badge": "Tiên phong liên vùng & AI Socratic",
+          "points": [
+            "Hệ thống hóa không gian văn hóa đô thị TP.HCM mở rộng (TP.HCM + Bình Dương + Bà Rịa Vũng Tàu).",
+            "Tích hợp trợ lý AI theo cơ chế gợi mở Socratic và hệ thống Prompt 5 cấp độ thay thế cho việc tìm kiếm thụ động.",
+            "Kết hợp yếu tố Game hóa (Gamification) thu thập huy hiệu di sản."
+          ]
+        },
+        {
+          "title": "Tính Khoa Học (Scientific Rigor)",
+          "badge": "Khung chuẩn UNESCO HUL",
+          "points": [
+            "Nền tảng lý luận vững chắc dựa trên phương pháp Cảnh quan Đô thị Lịch sử của UNESCO.",
+            "Quy trình thực nghiệm chuẩn tắc 7 bước, đối chứng Pre-Post N=100 học sinh, đo kiểm thang Likert khách quan.",
+            "Tất cả tư liệu đều trích dẫn nguồn lưu trữ chính thống và cổng thông tin Sở VHTT."
+          ]
+        },
+        {
+          "title": "Tính Thực Tiễn (Practicality)",
+          "badge": "Học liệu mở dùng ngay",
+          "points": [
+            "Website hoạt động trực tuyến trên GitHub, đáp ứng tự học mọi lúc mọi nơi trên điện thoại và máy tính.",
+            "Cung cấp giáo cụ trực quan giá trị cho giáo viên giảng dạy môn Giáo dục địa phương theo CT GDPT 2018.",
+            "Cấu trúc dữ liệu mở, sẵn sàng cập nhật thêm các di tích mới dễ dàng."
+          ]
+        },
+        {
+          "title": "Tính Cộng Đồng (Community Impact)",
+          "badge": "Lan tỏa bản sắc thế hệ trẻ",
+          "points": [
+            "Khơi dậy niềm tự hào và tình yêu quê hương đất nước của học sinh Gen Z qua công nghệ số hiện đại.",
+            "Chuyển đổi nhận thức bảo tồn di sản từ nghĩa vụ hành chính thành hành vi chủ động khám phá.",
+            "Mô hình mẫu có thể nhân rộng sang các tỉnh thành và vùng văn hóa khác trên cả nước."
+          ]
+        }
+      ],
+      "speakerNotes": "Công trình đóng góp trên 4 phương diện: Về tính mới, đây là nền tảng đầu tiên gắn kết 3 địa phương dưới góc nhìn UNESCO HUL có AI đồng hành. Về tính khoa học, dữ liệu thực nghiệm N=100 được kiểm chứng minh bạch. Về tính thực tiễn, sản phẩm dùng được ngay cho môn Giáo dục địa phương. Và về cộng đồng, đề tài truyền cảm hứng bảo tồn di sản cho thế hệ trẻ."
+    },
+    {
+      "id": "limitations-roadmap",
+      "slideNumber": 11,
+      "category": "10 / HẠN CHẾ & HƯỚNG PHÁT TRIỂN",
+      "title": "Nhìn Nhận Khách Quan Hạn Chế & Lộ Trình Nâng Cấp",
+      "headline": "Từ dự án nghiên cứu THPT hướng tới hệ sinh thái học liệu số di sản mở rộng",
+      "lead": "Thẳng thắn nhìn nhận những ranh giới công nghệ hiện tại và đề xuất lộ trình nâng cấp khả thi trong giai đoạn tiếp theo.",
+      "limitations": [
+        {
+          "title": "Phạm vi học liệu ban đầu",
+          "desc": "Mới bao quát 21 địa danh tiêu biểu, chưa thể phủ hết toàn bộ hàng trăm di tích và lễ hội phong phú của vùng Đông Nam Bộ."
+        },
+        {
+          "title": "Cơ chế tương tác AI",
+          "desc": "Hoạt động AI hiện chủ yếu sử dụng qua bộ Prompt tối ưu cho các mô hình ngôn ngữ bên ngoài; cần tích hợp API mô hình trực tiếp trong applet."
+        },
+        {
+          "title": "Dung lượng mẫu thử nghiệm",
+          "desc": "Thực nghiệm dừng ở quy mô 100 học sinh tại 01 trường THPT Bình Phú; cần mở rộng kiểm chứng tại các trường THPT ở TP.HCM và BR-VT."
+        }
+      ],
+      "roadmap": [
+        {
+          "stage": "Giai đoạn 1 (Quý 4/2026)",
+          "title": "Nâng cấp lên 50+ Học liệu & Thêm Video 4K",
+          "desc": "Bổ sung các làng nghề gốm sứ Bình Dương, di tích địa đạo Tam Giác Sắt, di sản Côn Đảo chi tiết hơn."
+        },
+        {
+          "stage": "Giai đoạn 2 (Quý 1/2027)",
+          "title": "Tích hợp Gemini API trực tiếp trong Web",
+          "desc": "Nhúng cửa sổ chat Ba Son AI natively, hỗ trợ tìm kiếm giọng nói tiếng Việt và giải thích thuật ngữ địa phương."
+        },
+        {
+          "stage": "Giai đoạn 3 (Năm học 2027-2028)",
+          "title": "Ảo hóa 3D / VR Tour 360° & Đa ngôn ngữ",
+          "desc": "Tích hợp trải nghiệm thực tế ảo tham quan Bến Nhà Rồng, Dinh Độc Lập; bản song ngữ Việt - Anh phục vụ du lịch học đường."
+        }
+      ],
+      "speakerNotes": "Với tinh thần khoa học khách quan, nhóm nhìn nhận rõ 3 hạn chế: phạm vi 21 học liệu, AI còn phụ thuộc công cụ ngoài và mẫu thử 100 em. Lộ trình phát triển đã được vạch rõ: mở rộng 50+ học liệu trong năm 2026, nhúng trực tiếp Gemini AI API vào web và hướng tới số hóa VR 360 độ trong năm 2027."
+    },
+    {
+      "id": "conclusion-qa",
+      "slideNumber": 12,
+      "category": "KẾT LUẬN & THUYẾT TRÌNH",
+      "title": "Kết Luận Khoa Học & Phiên Hỏi - Đáp (Q&A)",
+      "headline": "Công nghệ số và Trí tuệ nhân tạo: Đòn bẩy đưa di sản văn hóa dân tộc đến gần thế hệ trẻ",
+      "lead": "Đề tài chứng minh thành công tính khả thi và hiệu quả của mô hình học liệu số thông minh HCMC CultureHub trong nhà trường phổ thông.",
+      "summaryHighlights": [
+        { "title": "Hoàn thành mục tiêu", "detail": "Xây dựng vận hành thành công kho học liệu số 21 chủ đề theo chuẩn UNESCO HUL trên nền tảng GitHub." },
+        { "title": "Đột phá phương pháp", "detail": "Ứng dụng trợ lý Ba Son AI định hướng tư duy Socratic, đảm bảo đạo đức trí tuệ nhân tạo học đường." },
+        { "title": "Hiệu quả định lượng", "detail": "100 học sinh thực nghiệm ghi nhận điểm Post-test tăng 1.59%, nhóm Văn hóa tăng 3.3%, độ hài lòng đạt 3.97/5.0." }
+      ],
+      "qrLinks": {
+        "title": "Trải nghiệm sản phẩm trực tiếp",
+        "url": "https://hcmc-pg.github.io/HCMC-web/",
+        "authorSignoff": "Hồ Ngọc Thư (12A5) & Nguyễn Thanh Trúc (12A1) - GVHD: Th.s Hoàng Thị Tú Anh"
+      },
+      "speakerNotes": "Tóm lại, đề tài đã giải quyết được nhu cầu cấp thiết về nguồn học liệu văn hóa trực quan, khẳng định tiềm năng của AI trong giáo dục di sản. Nhóm chúng em xin trân trọng cảm ơn Quý Thầy Cô trong Hội đồng Giám khảo đã lắng nghe. Chúng em rất mong nhận được những ý kiến đóng góp quý báu và sẵn sàng giải đáp các câu hỏi từ Hội đồng!"
+    }
+  ]
+}
